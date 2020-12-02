@@ -3,16 +3,29 @@ ImageJ plugin to measure a field of beads and apply line profiles across each id
 
 INSTALLATION
 
-1.Ensure that the ImageJ version is at least 1.5 and the installation has Java 1.8.0_60 (64bit) or higher installed. If not download the latest version of ImageJ bundled with Java and install it.
+1. Ensure that the ImageJ version is at least 1.5 and the installation has Java 1.8.0_60 (64bit) or higher installed. If not download the latest version of ImageJ bundled with Java and install it.
 
- 2.The versions can be checked by opening ImageJ and clicking Help then About ImageJ.
+2. The versions can be checked by opening ImageJ and clicking Help then About ImageJ.
 
- 3.Download the latest copy of Bio-Formats into the ImageJ plugin directory if you are using images not in the tiff format.
+3. Download the latest copy of Bio-Formats into the ImageJ plugin directory if you are using images not in the tiff format.
 
- 4.Create a directory in the C: drive called Temp (case sensitive)
+4. Create a directory in the C: drive called Temp (case sensitive)
 
- 5.Using notepad save a blank .txt files called Results.txt into the Temp directory you previously created (also case sensitive).
+5. Using notepad save a blank .txt files called Results.txt into the Temp directory you previously created (also case sensitive).
 
- 6.Place RingMeasure_.jar into the plugins directory of your ImageJ installation, a plugin called Dots Lines should appear in the Plugins drop down menu on ImageJ.
+6. Place RingMeasure_.jar into the plugins directory of your ImageJ installation, a plugin called Dots Lines should appear in the Plugins drop down menu on ImageJ.
 
- 7.RingMeasure_.java is the editable code for the plugin should improvements or changes be required.
+7. RingMeasure_.java is the editable code for the plugin should improvements or changes be required.
+
+USAGE
+
+1. You will be prompted to open 2 tiff images. The plugin was written for 2 channel tiff images acquired Green channel then Red Channel. Make sure that when prompted the correct colour channels are assigned.
+
+2. If proprietary format images are used with Bio-Formats make sure that the only tick is in Split Channels, nothing else should be ticked.
+
+3. Once the images have opened you will be prompted to select the colour channels and the plugin will proceed automatically.
+
+4. The measurments will be made automatically and the cell numbers of all previously counted cells will be marked on the red image.
+
+5. Results are saved to the text file you should have created in C:\Temp.
+
